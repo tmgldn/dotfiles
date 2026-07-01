@@ -204,7 +204,7 @@ const green = str => `\x1b[32m${str}\x1b[0m`
             ext = ext === null ? "" : ext[0]
             const filePath = path.join(os.tmpdir(), `${Math.random().toString().slice(2)}${ext}`)
             await fs.writeFile(filePath, str)
-            cp.execSync(`${process.platform === "linux" ? "codium" : "/Applications/VSCodium.app/Contents/Resources/app/bin/codium"} '${filePath}'`)
+            cp.execSync(`${process.platform === "linux" ? "code" : "/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code"} '${filePath}'`)
 
             await prompt('Opened editor. Edit and save, then press [Enter] to continue')
 
