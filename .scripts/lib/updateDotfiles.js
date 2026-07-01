@@ -231,7 +231,8 @@ const green = str => `\x1b[32m${str}\x1b[0m`
   }))
 
   if (hasChanges) {
-    cp.execSync(`zsh -c 'git --git-dir=$HOME/.dotfiles --work-tree=$HOME add $HOME/.scripts $HOME/README.md; git --git-dir=$HOME/.dotfiles --work-tree=$HOME commit -m "updateDotfiles.js"; git --git-dir=$HOME/.dotfiles --work-tree=$HOME push --set-upstream origin main'`)
+    console.log('changes made locally but not updated elsewhere')
+    // cp.execSync(`zsh -c 'git --git-dir=$HOME/.dotfiles --work-tree=$HOME add $HOME/.scripts $HOME/README.md; git --git-dir=$HOME/.dotfiles --work-tree=$HOME commit -m "updateDotfiles.js"; git --git-dir=$HOME/.dotfiles --work-tree=$HOME push --set-upstream origin main'`)
   }
 })()
 
