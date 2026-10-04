@@ -2,7 +2,7 @@ source $HOME/.scripts/env.zsh
 
 echo -e "\e[1m\e[31mConfiguring git\e[0m"
 git config --global user.name "Tom Golden"
-git config --global user.email oss@tom.bio
+git config --global user.email oss@tmgldn.com
 git config --global pull.rebase false
 git config --global color.ui true
 
